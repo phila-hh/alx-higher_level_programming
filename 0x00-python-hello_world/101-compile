@@ -1,3 +1,2 @@
 #!/bin/bash
-filename=${PYFILE}
-python3 -m py_compile -o "${filename%.py}.pyc" "$PYFILE"
+python3 -c "from py_compile import compile; compile('$PYFILE', '$PYFILE' + 'c')"
