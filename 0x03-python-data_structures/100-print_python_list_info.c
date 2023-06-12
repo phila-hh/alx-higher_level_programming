@@ -13,11 +13,6 @@ void print_python_list_info(PyObject *p)
 	long int size, aloc, i;
 	PyObject *item;
 
-	if (!PyList_Check(p))
-	{
-		return;
-	}
-
 	size = PyList_Size(p);
 	aloc = ((PyListObject *)p)->allocated;
 
