@@ -29,8 +29,8 @@ class Rectangle():
             width (int): width of the rectangle
             height (int): height of the rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         type(self).number_of_instances += 1
 
     def __repr__(self):
@@ -124,9 +124,5 @@ class Rectangle():
 
     @classmethod
     def square(cls, size=0):
-        """Returns a new instance of Rectangle with width == height == size
-
-        Args:
-            size (int): value of the height and width of the rectangle
-        """
+        """Returns a new instance of Rectangle with width == height == size"""
         return Rectangle(size, size)
