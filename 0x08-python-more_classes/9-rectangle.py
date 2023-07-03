@@ -129,4 +129,4 @@ class Rectangle():
         Args:
             size (int): value of the height and width of the rectangle
         """
-        return cls(size, size)
+        return Rectangle(size, size)
