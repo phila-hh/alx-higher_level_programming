@@ -27,8 +27,8 @@ class Rectangle():
             width (int): width of the rectangle
             height (int): height of the rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         type(self).number_of_instances += 1
 
     def __repr__(self):

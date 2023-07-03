@@ -23,8 +23,8 @@ class Rectangle():
             width (int): width of the rectangle
             height (int): height of the rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     def __repr__(self):
         """Returns a string representation of the Rectangle to be handled by
