@@ -7,7 +7,7 @@ This module contains the inherits_from function
 """
 
 
-def inheris_from(obj, a_class):
+def inherits_from(obj, a_class):
     """checks if the object is an instance of a class that inherited
     (directly or indirectly) from the specified class
 
