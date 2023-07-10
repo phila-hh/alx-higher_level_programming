@@ -22,8 +22,8 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """overrides the builtin __str__ function of the Rectangle class to
         return a string description of the class"""
-    return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
 
-def area(self):
-    """returns the area of the Rectangle object"""
+    def area(self):
+        """returns the area of the Rectangle object"""
         return self.__width * self.__height
