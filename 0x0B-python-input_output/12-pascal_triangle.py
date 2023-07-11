@@ -8,13 +8,13 @@ This module contains the pascal_triangle() function
 
 
 def pascal_triangle(n):
-    """returns a list of lists of integers representing the Pascal’s triangle
-    of n"""
-    tri = []
+    """returns a list of lists of integers representing the
+    Pascal’s triangle of n"""
+    triangle = []
     if n <= 0:
-        return tri
+        return []
     for i in range(n):
         x = 11 ** i
         row = [int(digit) for digit in str(x)]
-        tri += [row]
-    return tri
+        triangle += [row]
+    return triangle
